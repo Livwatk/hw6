@@ -37,7 +37,7 @@ function displayWeather(response) {
 }
 function searchCity(city) {
   let apiKey = "bd3b19ae6eda7b41ce3eb2fcab694e1f";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?=${city}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayWeather);
 }
 
@@ -64,6 +64,6 @@ let now = new Date();
 time.innerHTML = timeNow(now);
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", sumbitAction);
-let currentButton = doucment.querySelector("#current-button");
+let currentButton = document.querySelector("#current-button");
 currentButton.addEventListener("click", getCurrentLocation);
 searchCity("Paris");
