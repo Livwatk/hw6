@@ -12,10 +12,15 @@
       crossorigin="anonymous"
     />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/4201967c7f.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <link href="src/styles.css" rel="stylesheet" type="text/css" />
   <body>
     <h1>
+      📍
       <form id="search-form">
         <input
           type="text"
@@ -30,21 +35,28 @@
           class="button-search"
           id="search-button"
         />
-        <input id="current-button"
+        <input
+          id="current-button"
           type="submit"
           value="Current location"
           class="button-current"
-         
         />
       </form>
     </h1>
-    <h2><ul>
-      <li class="city"id="city">city</li>
-      <li class="time"id="time">time</li>
-      <li class="temp" id="class">temp</li>
-    <liv class="humidity" id="humidity">humidity:</li>
-    <li class="wind" id="wind">wind:</li>
-    </ul></h2>
+    <h2>
+      <ul>
+        <li><span class="city" id="city"></span></li>
+        <li><span class="time" id="time"></span></li>
+        <li class="icon">
+          <i id="icon" class="fa-solid fa-cloud-sun"></i
+          ><span class="temp" id="temp"></span>°
+        </li>
+        <li class="humidity">
+          Humidity: <span class="humidity" id="humidity"></span>%
+        </li>
+        <li class="wind">Wind: <span class="wind" id="wind"></span> km/h</li>
+      </ul>
+    </h2>
     <script src="src/index.js"></script>
   </body>
 </html>

@@ -20,8 +20,11 @@ ul {
   list-style-type: none;
   text-align: center;
 }
+.icon {
+  font-size: 70px;
+}
 .temp {
-  font-size: 100px;
+  font-size: 70px;
 }
 .time {
   font-size: 23px;
@@ -33,6 +36,10 @@ ul {
 .button-search {
   background-color: pink;
 }
-.unit {
-  position: relative;
+.humidity {
+  font-size: 22px;
+}
+.wind {
+  font-size: 22px;
+  color: blueviolet;
 }
