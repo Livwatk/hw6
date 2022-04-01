@@ -19,44 +19,50 @@
   </head>
   <link href="src/styles.css" rel="stylesheet" type="text/css" />
   <body>
-    <h1>
-      📍
-      <form id="search-form">
-        <input
-          type="text"
-          placeholder="Search for a City"
-          autocomplete="off"
-          autofocus="on"
-          id="search-question"
-        />
-        <input
-          type="submit"
-          value="Search"
-          class="button-search"
-          id="search-button"
-        />
-        <input
-          id="current-button"
-          type="submit"
-          value="Current location"
-          class="button-current"
-        />
-      </form>
-    </h1>
-    <h2>
-      <ul>
-        <li><span class="city" id="city"></span></li>
-        <li><span class="time" id="time"></span></li>
-        <li class="icon">
-          <i id="icon" class="fa-solid fa-cloud-sun"></i
-          ><span class="temp" id="temp"></span>°
-        </li>
-        <li class="humidity">
-          Humidity: <span class="humidity" id="humidity"></span>%
-        </li>
-        <li class="wind">Wind: <span class="wind" id="wind"></span> km/h</li>
-      </ul>
-    </h2>
+    <span class="body">
+      <h1>
+        <form id="search-form">
+          <input
+            type="text"
+            placeholder="Search for a City"
+            autocomplete="off"
+            autofocus="on"
+            id="search-question"
+          />
+          <input
+            type="submit"
+            value="Search"
+            class="button-search"
+            id="search-button"
+          />
+          <input
+            id="current-button"
+            type="submit"
+            value="Current location"
+            class="button-current"
+          />
+        </form>
+      </h1>
+      <h2>
+        <ul>
+          <li><span class="city" id="city"></span></li>
+          <li><span class="time" id="time"></span></li>
+          <li class="icon">
+            <i id="icon" class="fa-solid fa-cloud-sun"></i
+            ><span class="temp" id="temp"></span>°
+          </li>
+          <li class="humidity">
+            Humidity: <span class="humidity" id="humidity"></span>%
+          </li>
+          <li class="wind">Wind: <span class="wind" id="wind"></span> km/h</li>
+        </ul>
+      </h2>
+    </span>
     <script src="src/index.js"></script>
+    <footer>
+      <a href="https://github.com/Livwatk/hw6" target="_blank"
+        >Open-source code</a
+      >, by Olivia Watkins
+    </footer>
   </body>
 </html>

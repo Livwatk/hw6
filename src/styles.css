@@ -1,4 +1,4 @@
-body {
+.body {
   border: 1px solid #ffffff;
   max-width: 900px;
   border-radius: 10px;
@@ -42,4 +42,7 @@ ul {
 .wind {
   font-size: 22px;
   color: blueviolet;
+}
+footer {
+  text-align: center;
 }
