@@ -1,48 +1,56 @@
-.body {
+.container {
   border: 1px solid #ffffff;
-  max-width: 900px;
+  max-width: 600px;
+  color: darkcyan;
   border-radius: 10px;
   box-shadow: 1px 2px 3px 4px;
-  display: block;
   padding: 15px;
   margin: 20px auto;
-  text-align: center;
-}
-h1 {
-  font-size: 25px;
-  font-weight: lighter;
+  text-align: left;
 }
 form {
-  font-size: 21px;
-  text-align: center;
-}
-ul {
-  list-style-type: none;
-  text-align: center;
-}
-.icon {
-  font-size: 70px;
-}
-.temp {
-  font-size: 70px;
-}
-.time {
-  font-size: 23px;
-  color: blue;
+  font-size: 22px;
 }
 .button-current {
-  background-color: green;
+  background-color: #adad13;
 }
 .button-search {
-  background-color: pink;
+  background-color: darkcyan;
 }
-.humidity {
-  font-size: 22px;
+ul {
+  margin: 0 auto;
+  padding: 0;
+  color: goldenrod;
+  list-style-type: none;
+  font-size: 20px;
 }
-.wind {
-  font-size: 22px;
-  color: blueviolet;
+ul:first-letter {
+  text-transform: capitalize;
 }
-footer {
-  text-align: center;
+.weather-temperature .icon {
+  display: block;
+  margin-right: 5px;
+  height: 64px;
+  width: 64px;
+}
+.weather-temperature strong {
+  color: goldenrod;
+  font-size: 64px;
+  line-height: 2;
+  font-weight: 400;
+}
+.weather-temperature .units {
+  position: relative;
+  font-size: 16px;
+  top: -32px;
+}
+h2 {
+  font-size: 32px;
+  color: darkcyan;
+}
+small {
+  display: block;
+  padding: 0 auto;
+  font-size: 15px;
+  margin: 25px;
 }
