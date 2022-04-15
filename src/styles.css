@@ -34,7 +34,7 @@ ul:first-letter {
   width: 64px;
 }
 .weather-temperature strong {
-  color: goldenrod;
+  color: #adad13;
   font-size: 64px;
   line-height: 2;
   font-weight: 400;
@@ -48,9 +48,15 @@ h2 {
   font-size: 32px;
   color: darkcyan;
 }
+ul .wind,
+.humidity,
+.date,
+.description {
+  color: #adad13;
+}
 small {
   display: block;
   padding: 0 auto;
   font-size: 15px;
-  margin: 25px;
+  text-align: center;
 }
