@@ -66,12 +66,12 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHTML;
 }
 
-function getForecast(coordinates) {
-  console.log(coordinates);
+function getCurrentWeather(postition) {
+  let lat = position.coords.latitude;
+  let lon = position.coords.longitude;
   let apiKey = "9de1490b29fb07378627d7765d3f1054";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
-  console.log(apiUrl);
-  axios.get(apiUrl).then(displayForecast);
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayWeather);
 }
 function displayWeather(response) {
   console.log(response.data);
@@ -97,7 +97,7 @@ function displayWeather(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
 
-  getForecast(response.data.coord);
+  getCurrentWeather(response.data.coord);
 }
 
 let apiKey = "9de1490b29fb07378627d7765d3f1054";
@@ -120,7 +120,7 @@ function handleSubmit(event) {
 
 function handleCurrentLocation(event) {
   event.preventDefault();
-  navigator.geolocation.getCurrentPosition(getForecast);
+  navigator.geolocation.getCurrentPosition(getCurrentWeather);
 }
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
