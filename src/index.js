@@ -84,6 +84,8 @@ function displayWeather(response) {
 
   celsiusTemperature = response.data.main.temp;
 
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
   temperature.innerHTML = Math.round(response.data.main.temp);
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
